@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Azii Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Azii Store</h1>
+
+    <div class="payment-method">
+      <h2>Dana</h2>
+      <div class="row">
+        <div class="number">085891281681</div>
+        <button onclick="copyText('085891281681')">Salin</button>
+      </div>
+    </div>
+
+    <div class="payment-method">
+      <h2>Gopay</h2>
+      <div class="row">
+        <div class="number">085891281681</div>
+        <button onclick="copyText('085891281681')">Salin</button>
+      </div>
+    </div>
+
+    <div class="payment-method">
+      <h2>OVO</h2>
+      <div class="row">
+        <div class="number">085891281681</div>
+        <button onclick="copyText('085891281681')">Salin</button>
+      </div>
+    </div>
+
+    <h2 class="qris-title">QRIS ALL PAYMENT</h2>
+    <div class="qris-section">
+      <a href="qris.png" download="QRIS-AziiStore.png">
+        <button>Download</button>
+      </a>
+      <img src="qris.png" alt="QRIS" class="qris-img">
+    </div>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Nomor berhasil disalin!");
+      });
+    }
+  </script>
+</body>
+</html>
